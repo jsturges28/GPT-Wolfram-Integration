@@ -38,7 +38,7 @@ If you want to run through your terminal, you must provide the following argumen
 
 **Example:**
 ```
-python RSS-scraper.py --ask "How deep is the Mariana Trench?" --openai_key "some_key_string" --wolfram_key "some_key_string" 
+python run.py --ask "How deep is the Mariana Trench?" --openai_key "some_key_string" --wolfram_key "some_key_string" 
 ```
 
 ## Authors <a name = "authors"></a>
