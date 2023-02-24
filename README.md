@@ -29,6 +29,46 @@ Register for a Wolfram Alpha App ID to obtain a key:
 
 [Wolfram Alpha App ID](https://developer.wolframalpha.com/portal/myapps/)
 
+Once you have both of your API keys, you can set them as environmental variables on your system:
+
+**Windows**:
+
+1. Run the following in the cmd prompt, replacing <yourkey> with your API key:
+
+```
+setx OPENAI_API_KEY “<yourkey>”
+```
+  
+2. This will apply to future cmd prompt window, so you will need to open a new one to use that variable with curl. You can validate that this variable has been set by opening a new cmd prompt window and typing in
+  
+```
+echo %OPENAI_API_KEY%
+```
+
+**Mac/Linux**:
+
+1. Run the following command in your terminal, replacing yourkey with your API key:
+
+```
+echo "export OPENAI_API_KEY='yourkey'" >> ~/.zshrc
+```
+
+2. Update the shell with the new variable:
+
+```
+source ~/.zshrc
+```
+
+3. Confirm that you have set your environment variable using the following command:
+
+```
+echo $OPENAI_API_KEY
+```
+  
+To set up your Wolfram Alpha APP ID key, perform the exact same steps above, except replace "OPENAI_API_KEY" with "WOLFRAM_ALPHA_APPID".
+
+If done properly, you don't have to specify --openai_key and --wolfram_key arguments every time you run the program. This will be automatically handled by the program.
+
 ## Usage <a name = "usage"></a>
 
 If you want to run through your terminal, you must provide the following arguments:
