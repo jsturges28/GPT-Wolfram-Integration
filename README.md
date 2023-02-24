@@ -8,7 +8,7 @@
 
 ## About <a name = "about"></a>
 
-This program is a first attempt at making use of merging ChatGPT and Wolfram Alpha through the use of the LangChain Python library. The program makes use of "agents," which are entities that are powered by an LLM (such as ChatGPT) and given a list of rules to follow in order to choose which model to use (in this case, referencing itself (ChatGPT) or Wolfram Alpha to answer a question.
+This program is a first attempt at making use of merging ChatGPT and Wolfram Alpha through the use of the LangChain Python library. The program makes use of "agents," which are entities that are powered by an LLM (such as ChatGPT) and given a list of rules to follow in order to choose which model to use (in this case, referencing itself (ChatGPT)) or Wolfram Alpha to answer a question.
 
 ## Prerequisites <a name = "prerequisites"></a>
 
