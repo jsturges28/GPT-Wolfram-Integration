@@ -4,11 +4,6 @@ import argparse
 from langchain.llms import OpenAI
 from langchain.agents import load_tools, load_agent, initialize_agent
 
-# set environment variables to access openAI and wolframalpha APIs
-
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["WOLFRAM_ALPHA_APPID"] = "A36LWL-RRVWVG5UJU"
-
 def create_parser():
     '''
     Creates an argument parser for the program to run in command line.
@@ -19,9 +14,18 @@ def create_parser():
     requiredNamed = parser.add_argument_group('Required named arguments')
 
     parser.add_argument('--ask', type=str, help='Question to ask engine', required=True)
+    #parser.add_argument('--openai_key', type=str, help='API key for OpenAI', required=True)
+    #parser.add_argument('--wolfram_key', type=str, help='API key for WolframAlpha', required=True)
+
+    return parser 
 
 parser = create_parser()
 args = parser.parse_args()
+
+# set environment variables to access openAI and wolframalpha APIs
+
+#os.environ["OPENAI_API_KEY"] = args.openai_key
+#os.environ["WOLFRAM_ALPHA_APPID"] = args.wolfram_key
 
 tool_names = ['wolfram-alpha']
 
