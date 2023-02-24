@@ -22,7 +22,7 @@ pip install wolframalpha
 
 You also need to obtain your personal API keys from OpenAI and Wolfram Alpha. The following links should will let you create and account and register for these keys:
 
-[Link to OpenAI Registration](https://openai.com/api/)\n
+[Link to OpenAI Registration](https://openai.com/api/)<br />
 [Link to Wolfram Alpha Registration](https://account.wolfram.com/login/create)
 
 Register for a Wolfram Alpha App ID to obtain a key:
